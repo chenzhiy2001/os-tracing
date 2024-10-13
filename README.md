@@ -1,5 +1,7 @@
 # os-tracing
 
+[工作计划](./plan.md)
+
 async rust 跟踪难点：
 
 1. rust 自身没有支持完整的异步功能，无官方 async runtime。rust 自身只负责处理 async 语法糖（见第三点），具体的调度功能由第三方 runtime (tokio, async-std) 实现
