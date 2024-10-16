@@ -46,7 +46,6 @@
 
 #### **3.3 阶段四：Linux调试跟踪（3-8月）**
 
-考虑新方案：jtag in openSBI (coprocessor)
 
 - **第1-2周**：用 eBPF 调试 Linux 内的用户态 rust 代码（包含异步函数）
 - **第3-5周**：尝试用 code-debug 调试工具调试 Linux，找到问题并修复

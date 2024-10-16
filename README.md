@@ -2,6 +2,20 @@
 
 [工作计划](./plan.md)
 
+
+code-debug源代码调试插件的适用范围扩展
+
+- 跨多个特权级：应用、内核和 **hypervisor**
+- 支持多种高级语言：Rust、C语言（xv6）
+- **支持 Rust 异步跟踪（编译选项，宏，甚至release，其他运行时）**
+- 支持多种操作系统：ArceOS unikernel、**ArceOS宏内核（starry）、Linux**
+- **rust eBPF in Linux => tracing rust program with async**
+- **jtag in openSBI (coprocessor)**
+- 支持多种CPU平台：RISC-V、x86-64
+- 支持多种开发板：QEMU、**x86 物理机（乾云工控机）**、星光2
+
+
+
 async rust 跟踪难点：
 
 1. rust 自身没有支持完整的异步功能，无官方 async runtime。rust 自身只负责处理 async 语法糖（见第三点），具体的调度功能由第三方 runtime (tokio, async-std) 实现
