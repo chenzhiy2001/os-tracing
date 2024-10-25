@@ -2,6 +2,8 @@
 
 [工作计划](./plan.md)
 
+本计划旨在实现对Rust异步函数和 Linux 操作系统的调试跟踪。最终愿景是用户可以在`code-debug` 操作系统调试工具中利用 GDB 跟踪 Linux，利用 eBPF 跟踪Rust 异步函数（这个异步函数可能运行于内核态，也可能运行于用户态）。
+
 async rust 跟踪难点：
 
   - rust 自身没有支持完整的异步功能，无官方 async runtime。rust 自身只负责处理 async 语法糖（见第三点），具体的调度功能由第三方 runtime (tokio, async-std) 实现
